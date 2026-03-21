@@ -1,0 +1,48 @@
+# Root .gitignore for the ai-agent mono-repo
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+!.env.example
+
+# Google OAuth tokens (NEVER commit these)
+backend/token.json
+backend/credentials.json
+
+# ── Node.js ───────────────────────────────────────────────────────────────────
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+!frontend/.env.example
+frontend/tsconfig.tsbuildinfo
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+.docker/
+
+# ── ChromaDB data ─────────────────────────────────────────────────────────────
+chroma_data/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
