@@ -11,12 +11,6 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-# Ensure the backend package root is on the path
-import sys
-import os
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-
 
 # ── Fixtures ──────────────────────────────────────────────────────────────────
 

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, AsyncIterator
+from typing import Any
 
 from langchain_classic.agents import AgentExecutor, create_react_agent
 from langchain_classic.prompts import PromptTemplate
@@ -13,7 +13,7 @@ from config import settings
 from memory_short import ShortTermMemory
 from tools_gmail import get_message, list_messages, send_message
 from tools_google_calendar import create_event, delete_event, list_events
-from tools_google_drive import list_files, upload_file
+from tools_google_drive import list_files
 
 
 # ── Prompt ────────────────────────────────────────────────────────────────────

@@ -1,18 +1,38 @@
-fastapi>=0.111.0
-uvicorn[standard]>=0.30.0
-langchain>=0.2.0
-langchain-classic>=1.0.0
-langchain-community>=0.2.0
-langchain-core>=0.2.0
-chromadb>=0.5.0
-httpx>=0.27.0
-pydantic>=2.7.0
-pydantic-settings>=2.3.0
-python-dotenv>=1.0.0
-google-auth>=2.30.0
-google-auth-oauthlib>=1.2.0
-google-api-python-client>=2.136.0
-python-multipart>=0.0.9
-sse-starlette>=2.1.0
-pytest>=8.2.0
-pytest-asyncio>=0.23.0
+# ── Core application ──────────────────────────────────────────────────────────
+fastapi==0.135.1
+uvicorn[standard]==0.42.0
+starlette==0.52.1
+
+# ── LLM & orchestration ───────────────────────────────────────────────────────
+langchain==1.2.13
+langchain-classic==1.0.3
+langchain-community==0.4.1
+langchain-core==1.2.20
+
+# ── Vector store ──────────────────────────────────────────────────────────────
+chromadb==1.5.5
+
+# ── HTTP client ───────────────────────────────────────────────────────────────
+httpx==0.28.1
+anyio==4.12.1
+
+# ── Validation & configuration ────────────────────────────────────────────────
+pydantic==2.12.5
+pydantic-settings==2.13.1
+python-dotenv==1.2.2
+python-multipart==0.0.22
+
+# ── Streaming ─────────────────────────────────────────────────────────────────
+sse-starlette==3.3.3
+
+# ── Google APIs ───────────────────────────────────────────────────────────────
+google-auth==2.49.1
+google-auth-oauthlib==1.3.0
+google-api-python-client==2.193.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==9.0.2
+pytest-asyncio==1.3.0
+
+# ── Linting ───────────────────────────────────────────────────────────────────
+ruff==0.11.2

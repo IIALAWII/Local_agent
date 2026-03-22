@@ -7,12 +7,10 @@ credentials previously obtained and stored as a token file.
 from __future__ import annotations
 
 import base64
-import email as email_lib
 from email.mime.text import MIMEText
 from typing import Any
 
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
 
 from tools_google_auth import get_google_credentials
 

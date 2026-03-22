@@ -2,14 +2,9 @@
 
 from __future__ import annotations
 
-import json
-import sys
-import os
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from ollama_client import OllamaClient
 
